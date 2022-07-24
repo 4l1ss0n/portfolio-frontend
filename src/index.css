@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-family: 'Baloo 2', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: var(--text);
+  }
+  
+  #root {
+    --bg-gd-1: #07062D;
+    --bg-gd-2: #08073C;
+    --bg-gd-3: #070559;
+    --selected: #6C91C2;
+    --text: #F9E9EC;
+    --red: #B62624;
+    --hover: #CCFFCB;
+    --skeleton-bg: #c0c0c0;
+    --skeleton-animation: #9a9a9a;
+  }
+
+::-webkit-scrollbar {
+  display: none;
 }
