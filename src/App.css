@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+.portfolio {
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(var(--bg-gd-1), var(--bg-gd-2), var(--bg-gd-3));
+    padding: 40px 20px 0 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.portfolio header {
+    width: 100%;
+    height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.portfolio header .navigation {
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.portfolio header .navigation .navigation-content {
+    padding: 0 10px;
+    transition: transform .3s;
 }
 
-.App-link {
-  color: #61dafb;
+.portfolio header .navigation .navigation-content:hover {
+    transform: scale(1.15);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.portfolio header .navigation .navigation-content a {
+    text-decoration: none;
+}
+
+.portfolio main .section {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.portfolio main .section .sub-title {
+    font-size: 1.6rem;
+}
+
+.portfolio main #apresentation {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio main #apresentation .title {
+    margin: 10px;
+}
+
+
+.portfolio main #who-am-i .who-am-i-content {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio main #who-am-i .who-am-i-content .me-text {
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.portfolio main #who-am-i .who-am-i-content img {
+    width: 30%;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.portfolio main #knowledges .knowledge-list {
+    padding: 10px;
+}
+
+.portfolio main #knowledges .knowledge-list .list {
+    list-style: none;
+}
+
+.portfolio main #contacts .contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolio main #contacts .contact-content a {
+    transition: transform .4s;
+}
+
+.portfolio main #contacts .contact-content a:hover {
+    transform: scale(1.2);
+}
+
+.portfolio main #contacts .contact-content a img {
+    width: 50px;
+}
+
+.portfolio footer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio hr {
+    border: 1px solid #ffffff14;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+#to-top-page {
+    background: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+
+}
+
+#to-top-page img {
+    width: 20px;
+    height: 20px;
+}
+
+
+#to-top-page:hover {
+    transform: scale(1.2);
+    border: 3px solid var(--text);
 }
